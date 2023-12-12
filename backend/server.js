@@ -2,8 +2,10 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const userRouter = require("./routes/userRoutes");
+const cors = require("cors"); // Import the cors middleware
 
 //express app
+app.use(cors()); // Use cors middleware to handle CORS issues
 const app = express();
 
 //middleware
