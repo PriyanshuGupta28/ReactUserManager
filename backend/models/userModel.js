@@ -19,9 +19,9 @@ const userSchema = new Schema(
     },
     address1: { type: String, required: true },
     address2: { type: String },
-    state: { type: String, required: true },
-    city: { type: String, required: true },
-    country: { type: String, required: true },
+    country: { type: Object, required: true },
+    state: { type: Object, required: true },
+    city: { type: Object, required: true },
     zipCode: { type: Number, required: true },
   },
   { timestamps: true }
